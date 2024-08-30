@@ -1,0 +1,40 @@
+.divPage1 {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    text-align: center;
+    & div {
+        margin: auto;
+        max-width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 2rem;
+        & h1 {
+            font-size: 7rem;
+        }
+        & p {
+            font-size: 2.5rem;
+        }
+    }
+}
+.divPage2 {
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.firstButton {
+    margin: 2% auto;
+    font-size: 2.5rem;
+}
+
+.firstSection {
+    padding: 2% 0;
+}

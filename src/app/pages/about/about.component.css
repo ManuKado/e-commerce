@@ -1,0 +1,43 @@
+.divPage1 {
+    margin: auto;
+    padding: 2% 0;
+    display: flex;
+    border-bottom: solid 5px var(--color2);
+}
+.divLeft {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+}
+
+.divPage2 {
+    margin: 2% auto;
+    & h2 {
+        text-decoration: underline;
+        text-align: center;
+    }
+    & div {
+        margin-top: 1%;
+        & div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+            & img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            & h3 {
+                font-size: 2.5rem;
+            }
+            & p {
+                font-style: italic;
+            }
+        }
+    }
+}

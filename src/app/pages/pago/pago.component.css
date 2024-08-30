@@ -1,0 +1,39 @@
+.firstSection {
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+.divPage1 {
+    margin: auto;
+}
+h2 {
+    margin-bottom: 5%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    & label {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-wrap: wrap;
+    }
+    & div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+.inputData {
+    padding: 1% 2%;
+    width: 100%;
+
+    color: var(--color2);
+    background-color: transparent;
+    border: solid 2px var(--color2);
+    border-radius: 5px;
+}
+a {
+    text-align: center;
+}

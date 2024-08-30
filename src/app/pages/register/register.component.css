@@ -1,0 +1,95 @@
+.divPage1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    margin: 2% auto;
+}
+/* -------------------- */
+.divRegister {
+    margin: auto;
+    padding: 2% 0;
+    min-width: 50%;
+
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    & h1 {
+        font-size: 5rem;
+    }
+    & 
+    form {
+        margin: 2% auto;
+        width: 80%;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+}
+/* -------------------- */
+.divInput {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    & label {
+        text-align: left;
+    }
+    & div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    
+        border-bottom: solid 2px var(--color1);
+        & svg {
+            height: 2rem;
+            fill: var(--color1);
+        }
+        & input {
+            padding: 1% 2%;
+            width: 100%;
+
+            color: var(--color1);
+            background-color: transparent;
+            border: none;
+        }
+    }
+    & p {
+        margin-top: 1vh;
+        min-height: 3vh;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: var(--color5);
+    }
+}
+.firstButton {
+    margin: 2% 0;
+    font-size: 2rem;
+
+    background-color: var(--color1);
+    color: var(--color2);
+    border: solid 5px var(--color1);
+    border-radius: 5px;
+
+    &:hover {
+        background-color: var(--color2);
+        color: var(--color1);
+    }
+}
+a {
+    font-weight: 100;
+    color: var(--color1);
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+    }
+}

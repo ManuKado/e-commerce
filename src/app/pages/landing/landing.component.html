@@ -1,0 +1,36 @@
+<div class="firstSection divPage1">
+  <div>
+      <h1>¡Bienvenido!</h1>
+      <p>Encuentra todo lo que necesitas para tu entrenamiento, desde equipo de gimnasio hasta articulos deportivos. <br> ¡Empieza a alcanzar tus metas hoy mismo!</p>
+      @if (!userLoginOn)
+        {
+          <a class="firstButton" routerLink="/login">Ver Catálogo</a>
+        }
+        
+        @if(userLoginOn == true)
+        {
+          <a class="firstButton" routerLink="/products">Ver Catálogo</a>
+        }
+      
+  </div>
+</div>
+<div class="divPage2 row flex-column flex-lg-row gap-3 ">
+  <div class="divCard col">
+      <img src="assets/imgs/gym1.jpg" alt="Hombre corriendo en una cinta de correr en el gimnasio.">
+      <div>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+  </div>
+  <div class="divCard col">
+      <img src="assets/imgs/gym2.jpg" alt="Persona levantando una barra con pesas en el gimnasio.">
+      <div>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+  </div>
+  <div class="divCard col">
+      <img src="assets/imgs/gym3.jpg" alt="Barra con pesas en el suelo de un gimnasio.">
+      <div>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+  </div>
+</div>

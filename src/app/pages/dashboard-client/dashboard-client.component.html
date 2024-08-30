@@ -1,0 +1,59 @@
+<div class="divPage1">
+    <h1>Mis pedidos</h1>
+    <div class="toptop">
+        <table class="topTable">
+            <tr class="row tableHead topTr">
+                <th class="col">Estado de Pedido</th>
+            <th class="col">Fecha de pedido</th>
+            <th class="col">Número de pedido</th>
+            <th class="col">Acción</th>
+            </tr>
+
+            <tr class="topTr">
+                <div class="accordionHeader row">
+                    @for (pedido of pedidos; track pedido.id){
+                        <tr class="row">
+                            <td class="col">{{pedido.estadoPedido}}</td>
+                            <td class="col">{{pedido.fechaPedido}}</td>
+                            <td class="col">{{pedido.numeroPedido}}</td>
+                            <td class="tdButton col">
+                                <button type="button" data-bs-toggle="collapse" (click)="mostrarProducts(pedido.id)" data-bs-target="#accordion1" aria-expanded="false" aria-controls="accordion1"><svg class="svgDrop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></button>
+                            </td>
+                        </tr>
+                    }
+                    @empty
+                    {	
+                        <div>
+                            No hay pedidos.
+                        </div>
+                    }
+                    
+                </div>
+                <div class="accordion-collapse collapse" id="accordion1">
+                    <table class="accordionBody">
+                        <tr class="row tableHead2">
+                            <th class="col">Código de producto</th>
+                            <th class="col">Cantidad</th>
+                            <th class="col">Producto</th>
+                            <th class="col">Precio Unitario</th>
+                        </tr>
+                        @for (product of products; track product.id){
+                            <tr class="row">
+                                <td class="col">{{product.codigoProducto}}</td>
+                                <td class="col">x{{product.cantidadProducto}}</td>
+                                <td class="col">{{product.nombreProducto}}</td>
+                                <td class="col">{{product.precioUnitario}}</td>
+                            </tr>
+                        }
+                        @empty
+                        {	
+                            <div>
+                                No hay productos en el pedido.
+                            </div>
+                        }
+                    </table>
+                </div>
+            </tr>
+        </table>
+    </div>
+</div>

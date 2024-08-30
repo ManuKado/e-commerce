@@ -1,0 +1,29 @@
+<form [formGroup]="productForm" (ngSubmit)="addProduct()">
+  <div>
+    <label>Código de Producto:</label>
+    <input type="text" id="codigoProducto" formControlName="codigoProducto">
+  </div>
+  <div>
+    <label>Nombre del Producto:</label>
+    <input type="text" id="nombreProducto" formControlName="nombreProducto">
+  </div>
+  <div>
+    <label>Descripción:</label>
+    <textarea id="descripcion" formControlName="descripcion"></textarea>
+  </div>
+  <div>
+    <label>Precio Unitario:</label>
+    <input type="number" id="precioUnitario" formControlName="precioUnitario">
+  </div>
+  
+  <button type="submit">Agregar Producto</button>
+</form>
+
+<form [formGroup]="deleteProductForm" (ngSubmit)="deleteProduct()">
+  <div>
+    <label>Código de Producto:</label>
+    <input type="text" id="codigoProducto" formControlName="codigoProducto">
+  </div>
+  <button type="submit">Eliminar Producto</button>
+</form>
+

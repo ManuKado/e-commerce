@@ -1,0 +1,83 @@
+.divPage1 {
+    margin: 1% auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    gap: 2rem;
+    .toptop {
+        border: solid 5px var(--color2);
+        overflow-y: scroll;
+        max-height: 60rem;
+        & .topTable {
+            font-size: 3rem;
+            width: 100%;
+            & .topTr {
+                margin: auto;
+                border-bottom: solid 5px var(--color2);
+                & .accordionHeader {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+.tdButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    & button {
+        width: max-content;
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        & .svgDeliver {
+            height: 4rem;
+            width: 4rem;
+            fill: var(--color3);
+        }
+        & .svgDelete {
+            height: 4rem;
+            width: 4rem;
+            fill: var(--color4);
+        }
+        & .svgDrop {
+            height: 4rem;
+            width: 4rem;
+            fill: var(--color2);
+        }
+    }
+}
+.tableHead {
+    position: sticky;
+    top: 0;
+    border: none;
+    & th {
+        text-transform: uppercase;
+        background-color: var(--color2);
+        color: var(--color1);
+        padding: .5% 0;
+    }
+}
+.accordionBody {
+    border-top: solid 2px var(--color2);
+    font-size: 3rem;
+    width: 100%;
+    & tr {
+        margin: auto;
+    }
+}
+.tableHead2 {
+    border: none;
+    background-color: var(--color25);
+    & th {
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: .5% 0;
+    }
+}

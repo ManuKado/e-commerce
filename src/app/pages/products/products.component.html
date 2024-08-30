@@ -1,0 +1,27 @@
+<div class="divPage1">
+    <h1>Listado de Productos</h1>
+    <a routerLink="/chart" class="firstButton" style="width: max-content; margin: auto;">Agregar</a>
+    <div class="facturas">
+        <table>
+            <tr class="trHead">
+                <th class="col">Código</th>
+                <th class="col">Producto</th>
+                <th class="col">Descripción</th>
+                <th class="col">Precio</th>
+                <th class="col">Acción</th>
+            </tr>
+            @for (item of products; track item.id) {
+                <tr class="trData">
+                    <td>{{item.codigoProducto}}</td>
+                    <td>{{item.nombreProducto}}</td>
+                    <td>{{item.descripcion}}</td>
+                    <td>${{item.precioUnitario}}</td>
+                    <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                </tr>
+            }
+            @empty {	
+                <div>There are no Products.</div>
+            }
+        </table>
+    </div>
+</div>

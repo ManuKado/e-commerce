@@ -1,0 +1,109 @@
+/* -------------------- */
+/* GENERAL */
+/* -------------------- */
+:root {
+    --color1: #fff9f0;
+    --color2: #313638;
+    --color25: #31363850;
+    --color3: #629677;
+    --color4: #A22C29;
+    --color5: #f08080;
+}
+html {
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+*, h1, h2, h3, p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* -------------------- */
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+p {
+    font-size: 2rem;
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
+label {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+input {
+    font-size: 2rem;
+}
+/* -------------------- */
+/* SHARED */
+/* -------------------- */
+.firstSection {
+    min-height: 70vh;
+    border-bottom: solid 5px var(--color2);
+    
+    background-image: url(/assets/back.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* -------------------- */
+.firstButton {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    background-color: var(--color2);
+    color: var(--color1);
+    border: solid 5px var(--color2);
+    border-radius: 5px;
+
+    padding: .5% 3%;
+
+    transition: border-color .3s, transform .3s, background-color .3s, color .3s;
+    &:hover {
+        background-color: var(--color1);
+        color: var(--color2);
+    }
+}
+/* -------------------- */
+.divCard {
+    height: 100%;
+    padding: 0;
+    & img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    & div {
+        height: max-content;
+        border: solid 1px var(--color25);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        & p {
+            padding: 2% 5%;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+
+

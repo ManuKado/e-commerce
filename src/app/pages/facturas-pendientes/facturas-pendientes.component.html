@@ -1,0 +1,31 @@
+<div class="divPage1">
+    <h1>Administrar Facturas</h1>
+    <a routerLink="/dashboard-admin" class="firstButton" style="width: max-content; margin: auto;">Volver</a>
+    <div class="facturas">
+        <table>
+                    <tr class="trHead">
+                        <th class="col">Código</th>
+                        <th class="col">Cantidad</th>
+                        <th class="col">Pedido</th>
+                        <th class="col">Total</th>
+                        <th class="col">Acción</th>
+                    </tr>
+                    @for (factura of facturas; track factura.id){
+                        <tr class="trData">
+                            <td class="col">{{factura.codigo}}</td>
+                            <td class="col">x{{factura.cantidad}}</td>
+                            <td class="col">{{factura.pedido}}</td>
+                            <td class="col">${{factura.total}}</td>
+                            <td><button>Cobrar</button></td>    
+                            
+                        </tr>
+                    }
+                    @empty
+                    {	
+                        <div>
+                            El carrito está vacio.    
+                        </div>
+                    }
+        </table>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+.divPage1 {
+    margin: 0 auto 1%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    & h1 {
+        color: var(--color2);
+        font-size: 5rem;
+        padding: 1% 0;
+    }
+    .topDiv {
+        border: solid 5px var(--color2);
+        overflow-y: scroll;
+        max-height: 60rem;
+        & table {
+            font-size: 2rem;
+            width: 100%;
+            & tr {
+                flex-wrap: nowrap;
+                margin: auto;
+                border-bottom: solid 5px var(--color2);
+            }
+            & .tableHead {
+                position: sticky;
+                top: 0;
+                border: none;
+                & th {
+                    text-transform: uppercase;
+                    background-color: var(--color2);
+                    color: var(--color1);
+                    padding: .5% 0;
+                }
+            }
+        }
+    }
+    .divBottom {
+        margin: 1% auto 0;
+        width: 100%;
+        background-color: var(--color3);
+        & p {
+            color: var(--color1);
+            font-weight: 900;
+            font-size: 5rem;
+        }
+    }
+}
+.tdButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    & button {
+        width: max-content;
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        & .svgDeliver {
+            height: 4rem;
+            width: 4rem;
+            fill: var(--color3);
+        }
+        & .svgDelete {
+            height: 4rem;
+            width: 4rem;
+            fill: var(--color4);
+        }
+        & .svgDrop {
+            height: 4rem;
+            width: 4rem;
+            fill: var(--color2);
+        }
+    }
+}
+.firstButton {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}

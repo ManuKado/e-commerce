@@ -1,0 +1,32 @@
+footer {
+    height: 250px;
+    background-color: var(--color2);
+    color: var(--color1);
+    display: flex;
+    padding: 2%;
+}
+div {
+    margin: auto;
+    & h1 {
+        font-size: 6rem;
+        font-weight: 900;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    & p {
+        font-size: 2rem;
+        margin-bottom: 1%;
+    }
+    & nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1rem;
+        & a {
+            & svg {
+                height: 4rem;
+                fill: currentColor;
+            }
+        }
+    }
+}
